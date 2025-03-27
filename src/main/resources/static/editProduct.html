@@ -1,0 +1,35 @@
+
+<div class="container mt-4">
+    <h2 class="mb-4">Modify or Delete Product</h2>
+
+    <div class="mb-3">
+        <label for="categorySelect" class="form-label">Select Category</label>
+        <select class="form-select" id="categorySelect">
+            <option value="">-- Choose a Category --</option>
+            <option value="fruits">Fruits</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="baked">Baked</option>
+            <option value="dairy">Dairy</option>
+        </select>
+    </div>
+
+    <div class="mb-3" id="productSelectContainer" style="display:none">
+        <label for="productSelect" class="form-label">Select Product</label>
+        <select class="form-select" id="productSelect"></select>
+    </div>
+
+    <div id="productDetails" style="display:none">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Unit</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody"></tbody>
+        </table>
+    </div>
+</div>

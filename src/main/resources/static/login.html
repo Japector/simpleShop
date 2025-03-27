@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+    <h2 class="mb-3">Login:</h2>
+    <hr>
+    <form action="" method="post" name="authform" id="authform" enctype='multipart/form-data' class="needs-validation" novalidate>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="text" class="form-control input-short" id="email" name="email" required>
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control input-short" id="password" name="password" required>
+            <div class="invalid-feedback">
+                Please enter your password.
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <span id="feedback" name="feedback"></span>
+    </form>
+    <br>
+    <div id="result"></div>
+</div>

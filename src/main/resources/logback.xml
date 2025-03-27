@@ -1,0 +1,22 @@
+
+<configuration>
+
+    <!-- Define an appender for a file -->
+   <!-- <appender name="FILE" class="ch.qos.logback.core.FileAppender"> -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Path and filename of the log file -->
+        <!-- <file>konz.log</file> -->
+
+        <!-- Define a standard encoder -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread] %logger{36} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Set the root logger level and add the file appender -->
+    <root level="info">
+      <!--   <appender-ref ref="FILE" />   FILE OUTPUT -->
+       <appender-ref ref="STDOUT" />   <!-- STD OUTPUT -->
+    </root>
+
+</configuration>

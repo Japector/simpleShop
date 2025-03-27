@@ -1,0 +1,129 @@
+
+.input-short {
+    width: 30%;
+}
+
+.btn-primary {
+    background-color: #989696 !important; 
+    border-color: #989696 !important; 
+    margin-bottom: 2.5rem !important
+}
+
+.btn-primary:hover {
+    background-color: #676565 !important;
+    border-color: #676565 !important;
+}
+
+.form-check-input {
+    background-color: #989696 !important;
+    border-color: #989696 !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/Shopping.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.6);
+    z-index: -1;
+}
+
+.container {
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(245,245,245,0.85));
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+}
+
+.main-card {
+    background: rgba(255,255,255,0.88);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+#welcome {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+.fade-container {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+#main-content {
+    min-height: 850px;
+}
+
+
+.auth-only,
+.guest-only {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+:is(.auth-only.visible,
+.guest-only.visible) {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#navbar {
+    border-radius: 8px;
+}
+
+.products {
+    margin-top: 2%;
+}
+
+
+
+.category-card {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 12px;
+}
+  
+.category-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar, .dropdown-menu {
+    position: relative;
+    z-index: 1050;
+  }

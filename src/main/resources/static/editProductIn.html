@@ -1,0 +1,46 @@
+<div class="container mt-4">
+    <input type="hidden" id="productId" name="productId">
+
+    <h4 class="mb-4 products">Edit Product</h4>
+    <hr>
+    <form id="editProductForm" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="unit" class="form-label">Unit</label>
+            <select class="form-select" id="unit" name="unit" required>
+                <option value="pcs">pcs</option>
+                <option value="g">g</option>
+                <option value="dkg">dkg</option>
+                <option value="kg">kg</option>
+                <option value="ml">ml</option>
+                <option value="l">l</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Default Price (€)</label>
+            <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select class="form-select" id="category" name="category" required>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="baked">Baked</option>
+                <option value="dairy">Dairy</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Product Image</label>
+            <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Edit Product</button>
+    </form>
+</div>
